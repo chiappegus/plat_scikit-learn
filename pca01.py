@@ -2,6 +2,7 @@
 import pandas as pd
 import sklearn
 import matplotlib.pyplot as plt
+from sklearn.decomposition import KernelPCA
 # Importamos los módulos específicos
 from sklearn.decomposition import PCA
 from sklearn.decomposition import IncrementalPCA
@@ -58,3 +59,18 @@ if __name__ == "__main__":
   logistic.fit(dt_train, y_train)
   #Calculamos nuestra exactitud de nuestra predicción
   print("SCORE IPCA: ", logistic.score(dt_test, y_test))
+  
+  kpca = KernelPCA(n_components=4, kernel='poly' )
+  kpca.fit(X_train)
+
+  dt_train = kpca.transform(X_train)
+  dt_test = kpca.transform(X_test)
+
+  logistic = LogisticRegression(solver='lbfgs')
+
+  logistic.fit(dt_train, y_train)
+  print("SCORE KPCA: ", logistic.score(dt_test, y_test))
+
+  
+  
+ 
