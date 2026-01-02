@@ -5,6 +5,17 @@ source env/Scripts/activate
 cd /d/proyectos/plat_scikit-learn
 """
 
+"""
+cd ~/Downloads/clase_reg_li_plazti
+source env/Scripts/activate
+cd /d/Users/hpgus/Documents/Proyectos_VS/platzi/plat_scikit-learn
+"""
+
+# cd ~/Desktop/Ora/BALANCES_GUS_PY
+# source env/Scripts/activate
+# cd /d/proyectos/plat_arboles
+
+
 
 
 # cd ~/Desktop/Ora/BALANCES_GUS_PY

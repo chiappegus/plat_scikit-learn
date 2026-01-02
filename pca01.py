@@ -60,8 +60,10 @@ if __name__ == "__main__":
   #Calculamos nuestra exactitud de nuestra predicción
   print("SCORE IPCA: ", logistic.score(dt_test, y_test))
   
-  kpca = KernelPCA(n_components=4, kernel='poly' )
-  kpca.fit(X_train)
+  # Ahora probamos con KernelPCA
+
+  kpca = KernelPCA(n_components=4, kernel='poly') # 'rbf', 'sigmoid', 'poly'
+  kpca.fit(X_train) 
 
   dt_train = kpca.transform(X_train)
   dt_test = kpca.transform(X_test)
