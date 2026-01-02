@@ -61,6 +61,12 @@ if __name__ == "__main__":
   print("SCORE IPCA: ", logistic.score(dt_test, y_test))
   
   # Ahora probamos con KernelPCA
+  # DATOS CRUDOS
+#     │
+#     ├── X (features) ──► Transformación (PCA/KPCA) ──► Modelo Predictivo ──► Predicción
+#     │     (sin y)              (sin y)                      (con y)
+#     └── y (target) ─────────────────────────────────────────────┘
+
 
   kpca = KernelPCA(n_components=4, kernel='poly') # 'rbf', 'sigmoid', 'poly'
   kpca.fit(X_train) 
