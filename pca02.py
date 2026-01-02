@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 
 if __name__ == "__main__":
-    dataset = pd.read_csv('./data/whr2017.csv')
+    dataset = pd.read_csv('./data2/whr2017.csv')
     print(dataset.describe())
 
     X = dataset[['gdp', 'family', 'lifexp', 'freedom' , 'corruption' , 'generosity', 'dystopia']]
