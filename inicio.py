@@ -1,11 +1,17 @@
 
 """
+
+WORK
 cd ~/Desktop/Ora/BALANCES_GUS_PY
 source env/Scripts/activate
 cd /d/proyectos/plat_scikit-learn
 """
 
+
+
 """
+HOME
+
 cd ~/Downloads/clase_reg_li_plazti
 source env/Scripts/activate
 cd /d/Users/hpgus/Documents/Proyectos_VS/platzi/plat_scikit-learn
