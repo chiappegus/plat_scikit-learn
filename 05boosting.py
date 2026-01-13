@@ -44,8 +44,10 @@ if __name__ == "__main__":
     plt.plot(estimators, total_accuracy)
     plt.xlabel('Estimators')
     plt.ylabel('Accuracy')
-    plt.show()
+   
     plt.savefig('Boost.png')
+    plt.show()
+
 
     print(np.array(total_accuracy).max())
 
